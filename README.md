@@ -15,6 +15,12 @@
 
 a dependency manager for protobuf files.
 
+#### installation
+
+```
+npm install -g gggp
+```
+
 #### usage
 
 ```
