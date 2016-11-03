@@ -1,6 +1,6 @@
 {
   "name": "gggp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "go go gadget proto - dependency management for .proto files",
   "bin": "./cli/bin.js",
   "scripts": {

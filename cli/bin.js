@@ -45,11 +45,12 @@ program
   .description(`get dependency and resolve tree`)
   .option('-s, --sha <sha>', 'sha of the github proto to use')
   .option('-p, --path <path>', 'path to store protos locally')
-  .action((proto, { sha, path: pth = 'protos' }) => {
+  .option('-b, --branch <branch>', 'branch of the .proto file in git')
+  .action((proto, { sha, path: pth = 'protos', branch = 'master' }) => {
     logo();
     const protoPath = path.join(process.cwd(), pth);
     return (proto
-      ? get(pth, [ proto, sha ])
+      ? get(pth, [ proto, sha, branch ])
       : init())
       .then(({ met, unmet }) => {
         if (unmet.length) process.exit(1);
