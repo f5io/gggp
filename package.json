@@ -1,6 +1,6 @@
 {
   "name": "gggp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "go go gadget proto - dependency management for .proto files",
   "bin": "./cli/bin.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/f5io/jsonpath.git"
+    "url": "git+https://github.com/f5io/gggp.git"
   },
   "keywords": [
     "proto", "protobuf", "grpc"
@@ -16,9 +16,9 @@
   "author": "Joe Harlow",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/f5io/jsonpath/issues"
+    "url": "https://github.com/f5io/gggp/issues"
   },
-  "homepage": "https://github.com/f5io/jsonpath#readme",
+  "homepage": "https://github.com/f5io/gggp#readme",
   "dependencies": {
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
